@@ -1,6 +1,9 @@
 general:
   kafka-topic: "midas-transactions"
 
+server:
+  port: 33400
+
 spring:
   kafka:
     producer:
