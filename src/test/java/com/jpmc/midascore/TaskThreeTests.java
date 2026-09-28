@@ -23,6 +23,9 @@ public class TaskThreeTests {
     @Autowired
     private FileLoader fileLoader;
 
+    @Autowired
+    private com.jpmc.midascore.repository.UserRepository userRepository;
+
     @Test
     void task_three_verifier() throws InterruptedException {
         userPopulator.populate();
@@ -32,7 +35,6 @@ public class TaskThreeTests {
         }
         Thread.sleep(2000);
 
-
         logger.info("----------------------------------------------------------");
         logger.info("----------------------------------------------------------");
         logger.info("----------------------------------------------------------");
@@ -40,6 +42,10 @@ public class TaskThreeTests {
         logger.info("kill this test once you find the answer");
         while (true) {
             Thread.sleep(20000);
+            com.jpmc.midascore.entity.UserRecord waldorf = userRepository.findByName("waldorf");
+            if (waldorf != null) {
+                logger.info("Waldorf's balance is: " + waldorf.getBalance());
+            }
             logger.info("...");
         }
     }

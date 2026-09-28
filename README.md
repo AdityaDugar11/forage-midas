@@ -38,8 +38,16 @@ The application follows an event-driven microservice architecture:
 - Testing Kafka pipelines using `EmbeddedKafka` and Spring Boot test utilities.
 
 ## Screenshots
+### Task 1
 ![alt text](./assets/Task_1.png)
+### Task 2
 ![alt text](./assets/Task_2.png)
+### Task 3
+![alt text](./assets/Task_3.png)
+### Task 4
+![alt text](./assets/Task_4.png)
+### Task 5
+![alt text](./assets/Task_5.png)
 
 ## Project Structure
 The project has a standard Maven Java structure:
